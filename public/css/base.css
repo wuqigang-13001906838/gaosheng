@@ -10,6 +10,10 @@ body{font: 12px "simhei", Arial, Helvetica, sans-serif;}
 }
 ul li{
 	list-style:none;
+	float:left;
+}
+img{
+	width:100%;
 }
 a{
 	text-decoration:none;

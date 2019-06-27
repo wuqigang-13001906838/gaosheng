@@ -1,0 +1,116 @@
+header{
+    width:100%;
+    height:68px;
+    background:url(../images/nav_bg.png) repeat-x;
+}
+.head{
+    width:996px;
+    margin:0 auto;
+    height:68px;
+}
+.head .logo{
+    width:236px;
+    height:38px;
+    margin-top:15px;
+    float:left;
+}
+/* 导航栏 */
+.nav{
+    float:left;
+    margin-left:100px;
+}
+.nav li{
+    width:130px;
+    text-align:center;
+}
+.nav li a{
+    color:#fff;
+    font-size:24px;
+    height:68px;
+    line-height:68px;
+}
+.nav li:hover{
+    background:#fff;
+}
+.nav li:hover a{
+    color:#4371dc;
+}
+/* 主体 */
+.body{
+    width:100%;
+    background:url(../images/bg.png) no-repeat;
+    background-size:100% 100%;
+}
+/* banner盒子 */
+.bannerBox{
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+.banner{
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.banner li{
+    height:100%;
+    position:relative;
+    transform:rotateY(0deg) rotateX(0deg);
+    transform-style:preserve-3d;
+    perspective:500px;
+}
+.huoguang{
+    position:absolute;
+    top:-395px;
+    left:-270px;
+    transform:translateZ(-600px);
+    width:100%;
+    height:100%;
+}
+.huoguang img{
+    position: absolute;
+}
+.renwu1{
+    position:absolute;
+    transform:translateZ(-500px);
+    top:-65px;
+    left:100px;
+}
+.renwu2{
+    position:absolute;
+    transform:translateZ(-550px);
+    top:195px;
+    left:20px;
+}
+.zidan1{
+    position:absolute;
+    transform:translateZ(-330px);
+    animation: zidan1 0.5s;
+    top:350px;
+    left:-150px;
+}
+@keyframes zidan1{
+    0%{
+        transform:translateZ(-1000px);
+        top:215px;
+    }
+    100%{transform:translateZ(-330px);}
+}
+.zidan2{
+    position:absolute;
+    transform:translateZ(-330px);
+    animation: zidan2 1s;
+    top:205px;
+    left:0px;
+}
+@keyframes zidan2{
+    0%{
+        transform:translateZ(-800px);
+        top:70px;
+    }
+    100%{
+        transform:translateZ(-330px);
+    }
+}

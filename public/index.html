@@ -1,1 +1,72 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" >
+    <title>高盛集团-带你实现倾家荡产，走向人生的低谷</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+   
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="" class="logo">
+                <img style="height:38px;" src="./images/logo.png" alt="">
+            </a>
+            <ul class="nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">开户注册</a></li>
+                <li><a href="#">加盟合作</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="body" class="body">
+        <div class="bannerBox">
+            <ul id="banner" class="banner">
+                <li class="childBox">
+                    <div class="huoguang">
+                        <img src="./images/dianjing/huoguang.png" alt="">
+                    </div>
+                    <div class="renwu1">
+                        <img src="./images/dianjing/renwu1.png" alt="">
+                    </div>
+                    <div class="renwu2">
+                        <img src="./images/dianjing/renwu2.png" alt="">
+                    </div>
+                    <div class="zidan1">
+                        <img src="./images/dianjing/zidan1.png" alt="">
+                    </div>
+                    <div class="zidan2">
+                        <img src="./images/dianjing/zidan2.png" alt="">
+                    </div>
+                </li>
+                <li class="childBox"></li>
+                <li class="childBox"></li>
+                <li class="childBox"></li>
+                <li class="childBox"></li>
+                <li class="childBox"></li>
+                <li class="childBox"></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var bomHeight = window.innerHeight;
+        var bomWidth = window.innerWidth;
+        var li = document.getElementsByClassName("childBox");
+        // 设置banner内部li的宽度
+        for(var i=0;i<li.length;i++){
+            li[i].style.width = bomWidth+'px';
+        }
+        // 设置浏览器可是区域高度
+        body.style.height = (bomHeight-68)+"px";
+        // 设置轮播图盒子的宽度
+        banner.style.width = 7 * bomWidth + "px";
+        
+    </script>
+</body>
+</html>
