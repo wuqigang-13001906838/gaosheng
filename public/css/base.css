@@ -1,0 +1,18 @@
+body,p,input,ul,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+	margin:0;
+	padding:0;
+}
+body{font: 12px "simhei", Arial, Helvetica, sans-serif;}
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+ul li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	display:inline-block;
+	line-height:0;
+}
