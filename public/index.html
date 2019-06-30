@@ -8,7 +8,6 @@
     <title>高盛集团-带你实现倾家荡产，走向人生的低谷</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
-   
 </head>
 <body>
     <header>
@@ -28,7 +27,7 @@
     <div id="body" class="body">
         <div class="bannerBox">
             <ul id="banner" class="banner">
-                <li class="childBox">
+                <!-- <li class="childBox">
                     <div class="huoguang">
                         <img src="./images/dianjing/huoguang.png" alt="">
                     </div>
@@ -44,9 +43,69 @@
                     <div class="zidan2">
                         <img src="./images/dianjing/zidan2.png" alt="">
                     </div>
+                    <div id="pre" class="contnet">
+                        <p class="title">电子竞技</p>
+                        <p class="summer">挑战无处不在</p>
+                        <p class="summer">最好的娱乐体验</p>
+                    </div>
+                </li> -->
+                <!-- <li class="childBox"> -->
+                    <!-- 背景图 -->
+                    <!-- <div class="tiyu_bg">
+                        <img src="./images/tiyu/tiyu_bg.png" alt="">
+                    </div> -->
+                    <!-- 球队a -->
+                    <!-- <div class="team_a">
+                        <img src="./images/tiyu/a_dui.png" alt="">
+                    </div> -->
+                    <!-- 球队b -->
+                    <!-- <div class="team_b">
+                        <img src="./images/tiyu/b_dui.png" alt="">
+                    </div> -->
+                    <!-- 球 -->
+                    <!-- <div class="ball">
+                        <img src="./images/tiyu/ball.png" alt="">
+                    </div> -->
+                    <!-- 气球 -->
+                    <!-- <div class="balloon">
+                        <img src="./images/tiyu/fenqiqiu.png" alt="">
+                    </div> -->
+                    <!-- 热气球 -->
+                    <!-- <div class="fire_balloon">
+                        <img src="./images/tiyu/reqiqiu.png" alt="">
+                    </div> -->
+                    <!-- 奖杯 -->
+                    <!-- <div id="div1" class="cup" style="position:absolute;left:800px;">
+                        <img src="./images/tiyu/cup.png" alt="">
+                    </div>
+                    <div id="pre" class="contnet">
+                        <p class="title">体育赛事</p>
+                        <p class="summer">英超、西甲、德甲、中超精彩赛事</p>
+                        <p class="summer">无限火力 玩法多样</p>
+                    </div>
+                </li> -->
+                <li class="childBox">
+                    <div id="pre" class="contnet">
+                        <p class="title">电子游艺</p>
+                        <p class="summer">最专业的走势两面盘系统分析</p>
+                        <p class="summer">最好的娱乐体验</p>
+                    </div>
+                    <div class="youyi_bg">
+                        <img src="./images/dianziyouyi/fruit_machine.png" alt="">
+                    </div>
+                    <div class="dice">
+                        <img src="./images/dianziyouyi/dice.png" alt="">
+                    </div>
+                    <div class="slots">
+                        <img src="./images/dianziyouyi/slots.png" alt="">
+                    </div>
+                    <div class="right_co_rib">
+                        <img src="./images/dianziyouyi/co_rib.png" alt="">
+                    </div>
+                    <div class="jackpot">
+                        <img src="./images/dianziyouyi/jackpot.png" alt="">
+                    </div>
                 </li>
-                <li class="childBox"></li>
-                <li class="childBox"></li>
                 <li class="childBox"></li>
                 <li class="childBox"></li>
                 <li class="childBox"></li>
@@ -54,19 +113,90 @@
             </ul>
         </div>
     </div>
-    <script>
-        var bomHeight = window.innerHeight;
-        var bomWidth = window.innerWidth;
-        var li = document.getElementsByClassName("childBox");
-        // 设置banner内部li的宽度
-        for(var i=0;i<li.length;i++){
-            li[i].style.width = bomWidth+'px';
-        }
-        // 设置浏览器可是区域高度
-        body.style.height = (bomHeight-68)+"px";
-        // 设置轮播图盒子的宽度
-        banner.style.width = 7 * bomWidth + "px";
-        
-    </script>
+    
 </body>
+<script>
+    var bomHeight = window.innerHeight;
+    var bomWidth = window.innerWidth;
+    var li = document.getElementsByClassName("childBox");
+    // 设置banner内部li的宽度
+    for(var i=0;i<li.length;i++){
+        li[i].style.width = bomWidth+'px';
+    }
+    // 设置浏览器可是区域高度
+    body.style.height = (bomHeight-68)+"px";
+    // 设置轮播图盒子的宽度
+    banner.style.width = 7 * bomWidth + "px";
+    // 第一个Li的文字上移
+    (function(){
+        var spp = parseInt(getComputedStyle(pre,null).top);
+        var timer = setInterval(function(){
+            var speed = 1;
+            if(pre.offsetTop <= 100){
+                clearInterval(timer);
+            }else{
+                pre.style.top = (pre.offsetTop -speed) + 'px';
+            }
+        },20)
+    })();
+    
+    // 奖杯掉下的动作
+    // (function(){
+    //     var timer=null;
+	//     var iSpeedX=0;
+	//     var iSpeedY=0;
+       
+    //     clearInterval(timer);
+    //     timer=setInterval(function (){
+    //         var oDiv=document.getElementById('div1');
+    //         iSpeedY+=3;
+    //         var l=oDiv.offsetLeft+iSpeedX;
+    //         var t=oDiv.offsetTop+iSpeedY;
+            
+    //         if(t>=document.documentElement.clientHeight-oDiv.offsetHeight)
+    //         {
+    //             iSpeedY*=-0.8;
+    //             iSpeedX*=0.8;
+    //             t=document.documentElement.clientHeight-oDiv.offsetHeight;
+    //         }
+    //         else if(t<=0)
+    //         {
+    //             iSpeedY*=-1;
+    //             iSpeedX*=0.8;
+    //             t=0;
+    //         }
+            
+    //         if(l>=document.documentElement.clientWidth-oDiv.offsetWidth)
+    //         {
+    //             iSpeedX*=-0.8;
+    //             l=document.documentElement.clientWidth-oDiv.offsetWidth;
+    //         }
+    //         else if(l<=0)
+    //         {
+    //             iSpeedX*=-0.8;
+    //             l=0;
+    //         }
+            
+    //         if(Math.abs(iSpeedX)<1)
+    //         {
+    //             iSpeedX=0;
+    //         }
+            
+    //         if(Math.abs(iSpeedY)<1)
+    //         {
+    //             iSpeedY=0;
+    //         }
+            
+    //         if(iSpeedX==0 && iSpeedY==0 && t==document.documentElement.clientHeight-oDiv.offsetHeight)
+    //         {
+    //             clearInterval(timer);
+    //         }
+    //         else
+    //         {
+    //             oDiv.style.left=l+'px';
+    //             oDiv.style.top=t+'px';
+    //         }
+    //     }, 30);
+    // })();
+</script>
 </html>

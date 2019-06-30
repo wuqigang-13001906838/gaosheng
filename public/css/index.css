@@ -9,14 +9,14 @@ header{
     height:68px;
 }
 .head .logo{
-    width:236px;
+    width:155px;
     height:38px;
     margin-top:15px;
     float:left;
 }
 /* 导航栏 */
 .nav{
-    float:left;
+    float:right;
     margin-left:100px;
 }
 .nav li{
@@ -61,6 +61,7 @@ header{
     transform-style:preserve-3d;
     perspective:500px;
 }
+/* 第一个li */
 .huoguang{
     position:absolute;
     top:-395px;
@@ -114,4 +115,358 @@ header{
         transform:translateZ(-330px);
     }
 }
+.contnet{
+    height:190px;
+    position:absolute;
+    top:150px;
+    left:75px;
+    font-family:"黑体";
+    color:#fff;
+}
+.contnet .title{
+    font-size:50px;
+    margin-bottom:15px;
+}
+.contnet .summer{
+    font-size:18px;
+}
+/* 第一个li结束 */
+/* 第二个li开始 */
+.tiyu_bg{
+    position:absolute;
+    top:-350px;
+    left:-100px;
+    width:80%;
+    height:200%;
+    transform:translateZ(-650px);
+}
+.tiyu_bg img{
+    width:100%;
+    height:100%;
+    animation: rotate 30s infinite linear;
+}
+/* a队员 */
+.team_a{
+    width:375px;
+    height:600px;
+    position:absolute;
+    top:-80px;
+    left:550px;
+    transform:translateZ(-300px);
+    animation: renwu1 5s infinite linear;
+}
+/* b队员 */
+.team_b{
+    width:300px;
+    height:400px;
+    position:absolute;
+    top:140px;
+    left:120px;
+    transform:translateZ(-300px);
+    animation: renwu2 5s infinite linear;
+}
+/* 球 */
+.ball{
+    width:250px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-180px;
+    left:300px;
+    animation: ball 5s infinite linear;
+}
+/* 气球 */
+.balloon{
+    width:120px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:380px;
+    left:0;
+    animation: balloon 5s infinite linear;
+}
+/* 热气球 */
+.fire_balloon{
+    width:80px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:-20px;
+    right:280px;
+    animation: fire_balloon 5s infinite linear;
+}
+/* 奖杯 */
+.cup{
+    width:125px;
+    transform:translateZ(-400px);
+}
+
+.team_a img,.team_b img{
+    width:100%;
+    height:100%;
+    
+}
+@keyframes fire_balloon{
+    0%{
+        top:-20px;
+    }
+    25%{
+        top:-10px;
+    }
+    50%{
+        top:-20px;
+    }
+    75%{
+        top:-30px;
+    }
+    100%{
+        top:-20px;
+    }
+}
+@keyframes balloon{
+    0%{
+        top:380px;
+        left:0;
+    }
+    25%{
+        top:370px;
+        left:-10px;
+    }
+    50%{
+        top:380px;
+        left:0;
+    }
+    75%{
+        top:390px;
+        left:10px;
+    }
+    100%{
+        top:380px;
+        left:0;
+    }
+}
+
+@keyframes ball{
+    0%{
+        top:-180px;
+        left:300px;
+    }
+    25%{
+        top:-170px;
+        left:310px;
+    }
+    50%{
+        top:-180px;
+        left:300px;
+    }
+    75%{
+        top:-190px;
+        left:290px;
+    }
+    100%{
+        top:-180px;
+        left:300px;
+    }
+}
+
+@keyframes renwu1{
+    0%{
+        top:-80px;
+        left:550px;
+    }
+    25%{
+        top:-70px;
+        left:530px;
+    }
+    50%{
+        top:-80px;
+        left:550px;
+    }
+    75%{
+        top:-90px;
+        left:570px;
+    }
+    100%{
+        top:-80px;
+        left:550px;
+    }
+}
+@keyframes renwu2{
+    0%{
+        top:140px;
+        left:120px;
+    }
+    25%{
+        top:120px;
+        left:100px;
+    }
+    50%{
+        top:140px;
+        left:120px;
+    }
+    75%{
+        top:160px;
+        left:140px;
+    }
+    100%{
+        top:140px;
+        left:120px
+    }
+}
+
+@keyframes rotate{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* 第三个li开始 */
+.youyi_bg{
+    position:absolute;
+    top:-150px;
+    left:50px;
+    width:50%;
+    height:200%;
+    transform:translateZ(-650px);
+}
+.dice{
+    width:120px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:380px;
+    right:330px;
+    animation: dice 5s infinite linear;
+}
+.slots{
+    width:120px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:100px;
+    right:450px;
+    animation: slots 5s infinite linear;
+}
+.right_co_rib{
+    width:120px;
+    transform:translateZ(-400px)  rotateY(180deg);
+    position:absolute;
+    top:100px;
+    right:100px;
+    animation: right_co_rib 5s infinite linear;
+}
+.jackpot{
+    width:260px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-160px;
+    right:250px;
+    animation: jackpot 5s infinite linear;
+}
+@keyframes jackpot{
+    0%{
+        top:-160px;
+        right:250px;
+    }
+    25%{
+        top:-170px;
+        right:260px;
+    }
+    50%{
+        top:-160px;
+        right:250px;
+    }
+    75%{
+        top:-150px;
+        right:240px;
+    }
+    100%{
+        top:-160px;
+        right:250px;
+    }
+}
+
+@keyframes right_co_rib{
+    0%{
+        top:100px;
+        right:100px;
+    }
+    25%{
+        top:90px;
+        right:110px;
+    }
+    50%{
+        top:100px;
+        right:100px;
+    }
+    75%{
+        top:110px;
+        right:90px;
+    }
+    100%{
+        top:100px;
+        right:110px;
+    }
+}
+
+@keyframes dice{
+    0%{
+        top:380px;
+        right:330px;
+    }
+    25%{
+        top:370px;
+        right:340px;
+    }
+    50%{
+        top:380px;
+        right:330px;
+    }
+    75%{
+        top:390px;
+        right:320px;
+    }
+    100%{
+        top:380px;
+        right:330px;
+    }
+}
+@keyframes slots{
+    0%{
+        top:100px;
+        right:450px;
+    }
+    25%{
+        top:90px;
+        right:460px;
+    }
+    50%{
+        top:100px;
+        right:450px;
+    }
+    75%{
+        top:110px;
+        right:440px;
+    }
+    100%{
+        top:100px;
+        right:450px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
