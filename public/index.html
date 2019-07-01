@@ -84,7 +84,7 @@
                         <p class="summer">无限火力 玩法多样</p>
                     </div>
                 </li> -->
-                <li class="childBox">
+                <!-- <li class="childBox">
                     <div id="pre" class="contnet">
                         <p class="title">电子游艺</p>
                         <p class="summer">最专业的走势两面盘系统分析</p>
@@ -105,8 +105,27 @@
                     <div class="jackpot">
                         <img src="./images/dianziyouyi/jackpot.png" alt="">
                     </div>
+                    <div class="left_co_rib">
+                        <img src="./images/dianziyouyi/co_rib.png" alt="">
+                    </div>
+                    <div id="id_bell" class="bell">
+                        <img src="./images/dianziyouyi/small_bell.png" alt="">
+                    </div>
+                </li> -->
+                <li class="childBox">
+                    <div class="buyu_bg">
+                        <img src="./images/buyu/buyu_zh.png" alt="">
+                    </div>
+                    <div class="tuwen">
+                        <img src="./images/buyu/tuwen.png" alt="">
+                    </div>
+                    <div class="yxb3">
+                        <img src="./images/buyu/yxb3.png" alt="">
+                    </div>
+                    <div class="yxb2">
+                        <img src="./images/buyu/yxb2.png" alt="">
+                    </div>
                 </li>
-                <li class="childBox"></li>
                 <li class="childBox"></li>
                 <li class="childBox"></li>
                 <li class="childBox"></li>
@@ -198,5 +217,41 @@
     //         }
     //     }, 30);
     // })();
+
+    // 铃铛抖动效果
+    setInterval(function(){
+        shaking(id_bell,'top',function(){
+            shaking(id_bell,'left');
+        });
+    },5000)
+
+    // 抖动函数封装 attr：left水平抖动 top：垂直抖动
+    function shaking(obj,attr,callback){
+        var pos = parseInt(getStyle(obj,attr));
+        var arr = [];
+        var num = 0;
+        for(var i=20;i>0;i-=2){
+            arr.push(i,-i);
+        }
+        arr.push(0);
+        clearInterval(obj.shaking);
+        obj.shaking = setInterval(function(){
+            obj.style[attr] = pos + arr[num] + 'px';
+            num ++;
+            if(num === arr.length){
+                clearInterval(obj.shaking);
+                callback && callback();
+            }
+        },50);
+    }
+
+    // 获取节点对象的样式属性值
+    function getStyle(obj,attr){
+        if(obj.currentStyle){
+            return obj.currentStyle[attr];
+        }else{
+            return window.getComputedStyle(obj,false)[attr];
+        }
+    }
 </script>
 </html>
