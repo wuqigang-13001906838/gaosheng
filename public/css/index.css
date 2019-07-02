@@ -91,6 +91,7 @@ header{
     animation: zidan1 0.5s;
     top:350px;
     left:-150px;
+    animation: zidan1 2s infinite linear;
 }
 @keyframes zidan1{
     0%{
@@ -105,6 +106,7 @@ header{
     animation: zidan2 1s;
     top:205px;
     left:0px;
+    animation: zidan2 2s infinite linear;
 }
 @keyframes zidan2{
     0%{
@@ -118,8 +120,6 @@ header{
 .contnet{
     height:190px;
     position:absolute;
-    top:150px;
-    left:75px;
     font-family:"黑体";
     color:#fff;
 }
@@ -516,6 +516,36 @@ header{
     right:450px;
     animation: yxb2 5s infinite linear;
 }
+.delphis{
+    width:336px;
+    transform:translateZ(-400px);
+    position:absolute;
+    bottom:-230px;
+    right:-250px;
+}
+.yxb1{
+    width:60px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:280px;
+    left:-350px;
+    animation: yxb1 5s infinite linear;
+}
+.shark{
+    width:256px;
+    transform:translateZ(-400px);
+    position:absolute;
+    bottom:-230px;
+    left:-550px;
+}
+.shell{
+    width:225px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-200px;
+    left:-500px;
+    animation: shell 5s infinite linear;
+}
 @keyframes tuwen{
     0%{
         top:-180px;
@@ -582,6 +612,442 @@ header{
         right:450px;
     }
 }
+@keyframes yxb1{
+    0%{
+        top:280px;
+        left:-350px;
+    }
+    25%{
+        top:290px;
+        left:-360px;
+    }
+    50%{
+        top:280px;
+        left:-350px;
+    }
+    75%{
+        top:270px;
+        left:-340px;
+    }
+    100%{
+        top:280px;
+        left:-350px;
+    }
+}
+@keyframes shell{
+    0%{
+        top:-200px;
+        left:-500px;
+     }
+    100%{
+        top:750px;
+        left:850px;
+    }
+}
+/* 彩票 */
+.big_shot{
+    width:740px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:80px;
+    left:20px;
+}
+.zb1{
+    width:75px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:-100px;
+    left:150px;
+    animation: zb 5s infinite linear;
+}
+
+.zb2{
+    width:53px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:-100px;
+    left:320px;
+    animation: zb 2s infinite linear;
+}
+.zb3{
+    width:93px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:0;
+    left:0;
+    animation: zb 2s infinite linear;
+}
+.zb4{
+    width:75px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:200px;
+    left:-100px;
+    animation: zb 3s infinite linear;
+}
+.zb5{
+    width:65px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:200px;
+    left:0;
+    animation: zb 4s infinite linear;
+}
+.zb6{
+    width:55px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:-30px;
+    left:600px;
+    animation: zb 5s infinite linear;
+}
+.zb7{
+    width:135px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:20px;
+    left:570px;
+    animation: zb 4s infinite linear;
+}
+.zb8{
+    width:40px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:78px;
+    left:653px;
+    animation: zb 3s infinite linear;
+}
+.zb9{
+    width:66px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:430px;
+    right:330px;
+    animation: zb 2s infinite linear;
+}
+.zb10{
+    width:120px;
+    transform:translateZ(-200px);
+    position:absolute;
+    top:390px;
+    right:210px;
+    animation: zb 2s infinite linear;
+}
+@keyframes zb{
+    0%{
+        top:-200px;
+    }
+    100%{
+        top:500px;
+        transform:translateX(200px) translateY(200px) scale(0.7) rotate(360deg);
+    }
+}
+.jb1{
+    width:115px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:390px;
+    left:-410px;
+    animation: jb 2s infinite linear;
+}
+.jb2{
+    width:130px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:200px;
+    right:110px;
+    animation: jb 2s infinite linear;
+}
+.jb3{
+    width:52px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-80px;
+    right:400px;
+    animation: jb 3s infinite linear;
+}
+.jb4{
+    width:68px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-20px;
+    right:550px;
+    animation: jb 4s infinite linear;
+}
+.jb5{
+    width:42px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:30px;
+    right:470px;
+    animation: jb 5s infinite linear;
+}
+.jb6{
+    width:40px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:120px;
+    right:550px;
+    animation: jb 3s infinite linear;
+}
+.jb7{
+    width:82px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:100px;
+    right:450px;
+    animation: jb 4s infinite linear;
+}
+.jb8{
+    width:22px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:170px;
+    right:630px;
+    animation: jb 5s infinite linear;
+}
+@keyframes jb{
+    0%{
+        top:-200px;
+    }
+    100%{
+        top:500px;
+        transform:translateX(200px) translateY(200px) scale(0.7) rotate(360deg);
+    }
+}
+/* 棋牌 */
+.zb_img{
+    width:630px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-140px;
+    left:350px;
+    animation: zbbg 5s infinite linear;
+}
+.big_img{
+    width:490px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:80px;
+    left:400px;
+}
+.meinv{
+    width:370px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-180px;
+    left:-400px;
+}
+.qipai_dice{
+    width:120px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:180px;
+    right:100px;
+    animation: qipai_dice 5s infinite linear;
+}
+.qipai{
+    left:350px;
+}
+@keyframes zbbg{
+    0%{
+        left:350px;
+    }
+    25%{
+        left:340px;
+    }
+    50%{
+        left:350px;
+    }
+    75%{
+        left:360px;
+    }
+    100%{
+        left:350px;
+    }
+}
+@keyframes qipai_dice{
+    0%{
+        top:180px;
+        right:100px;
+    }
+    25%{
+        top:170px;
+        right:110px;
+    }
+    50%{
+        top:180px;
+        right:100px;
+    }
+    75%{
+        top:190px;
+        right:90px;
+    }
+    100%{
+        top:180px;
+        right:100px;
+    }
+}
+/* 发牌员 */
+.fapaiyuan{
+    width:700px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-150px;
+    left:0px;
+}
+.puk{
+    width:270px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-100px;
+    right:260px;
+    animation: puk 5s infinite linear;
+}
+.puk1{
+    width:137px;
+    transform:translateZ(-400px);
+    position:absolute;
+    bottom:0px;
+    right:380px;
+    animation: puk1 5s infinite linear;
+}
+.puk2{
+    width:83px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:-130px;
+    right:650px;
+    animation: puk2 5s infinite linear;
+}
+.ship1{
+    width:213px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:250px;
+    right:50px;
+    animation: ship1 5s infinite linear;
+}
+.ship2{
+    width:141px;
+    transform:translateZ(-400px);
+    position:absolute;
+    top:300px;
+    left:-420px;
+    animation:ship2 5s infinite linear;
+}
+.ship3{
+    width:100px;
+    transform:translateZ(-400px);
+    position:absolute;
+    bottom:-100px;
+    left:-150px;
+    animation:ship3 5s infinite linear;
+}
+@keyframes ship3{
+    0%{
+        left:-150px;
+    }
+    25%{
+        left:-140px;
+    }
+    50%{
+        left:-150px;
+    }
+    75%{
+        left:-160px;
+    }
+    100%{
+        left:-150px;
+    }
+}
+@keyframes ship2{
+    0%{
+        top:300px;
+    }
+    25%{
+        top:310px;
+    }
+    50%{
+        top:300px;
+    }
+    75%{
+        top:290px;
+    }
+    100%{
+        top:300px;
+    }
+}
+@keyframes ship1{
+    0%{
+        right:50px;
+    }
+    25%{
+        right:60px;
+    }
+    50%{
+        right:50px;
+    }
+    75%{
+        right:40px;
+    }
+    100%{
+        right:50px;
+    }
+}
+@keyframes puk2{
+    0%{
+        top:-130px;
+    }
+    25%{
+        top:-120px;
+    }
+    50%{
+        top:-130px;
+    }
+    75%{
+        top:-140px;
+    }
+    100%{
+        top:-130px;
+    }
+}
+@keyframes puk1{
+    0%{
+        bottom:0px;
+    }
+    25%{
+        bottom:10px;
+    }
+    50%{
+        bottom:0px;
+    }
+    75%{
+        bottom:-10px;
+    }
+    100%{
+        bottom:0px;
+    }
+}
+@keyframes puk{
+    0%{
+        right:260px;
+    }
+    25%{
+        right:250px;
+    }
+    50%{
+        right:260px;
+    }
+    75%{
+        right:270px;
+    }
+    100%{
+        right:260px;
+    }
+}
+
+
 
 
 

@@ -8,6 +8,8 @@
     <title>高盛集团-带你实现倾家荡产，走向人生的低谷</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/banner.js"></script>
 </head>
 <body>
     <header>
@@ -27,7 +29,7 @@
     <div id="body" class="body">
         <div class="bannerBox">
             <ul id="banner" class="banner">
-                <!-- <li class="childBox">
+                <li class="childBox">
                     <div class="huoguang">
                         <img src="./images/dianjing/huoguang.png" alt="">
                     </div>
@@ -43,49 +45,42 @@
                     <div class="zidan2">
                         <img src="./images/dianjing/zidan2.png" alt="">
                     </div>
-                    <div id="pre" class="contnet">
+                    <div id="pre" class="contnet" style="top:150px;left:75px;">
                         <p class="title">电子竞技</p>
                         <p class="summer">挑战无处不在</p>
                         <p class="summer">最好的娱乐体验</p>
                     </div>
-                </li> -->
-                <!-- <li class="childBox"> -->
-                    <!-- 背景图 -->
-                    <!-- <div class="tiyu_bg">
+                </li>
+                <li class="childBox">
+                    <div class="tiyu_bg">
                         <img src="./images/tiyu/tiyu_bg.png" alt="">
-                    </div> -->
-                    <!-- 球队a -->
-                    <!-- <div class="team_a">
+                    </div>
+                    <div class="team_a">
                         <img src="./images/tiyu/a_dui.png" alt="">
-                    </div> -->
-                    <!-- 球队b -->
-                    <!-- <div class="team_b">
+                    </div>
+                    <div class="team_b">
                         <img src="./images/tiyu/b_dui.png" alt="">
-                    </div> -->
-                    <!-- 球 -->
-                    <!-- <div class="ball">
+                    </div>
+                    <div class="ball">
                         <img src="./images/tiyu/ball.png" alt="">
-                    </div> -->
-                    <!-- 气球 -->
-                    <!-- <div class="balloon">
+                    </div>
+                    <div class="balloon">
                         <img src="./images/tiyu/fenqiqiu.png" alt="">
-                    </div> -->
-                    <!-- 热气球 -->
-                    <!-- <div class="fire_balloon">
+                    </div>
+                    <div class="fire_balloon">
                         <img src="./images/tiyu/reqiqiu.png" alt="">
-                    </div> -->
-                    <!-- 奖杯 -->
-                    <!-- <div id="div1" class="cup" style="position:absolute;left:800px;">
+                    </div>
+                    <div id="div1" class="cup" style="position:absolute;left:800px;">
                         <img src="./images/tiyu/cup.png" alt="">
                     </div>
-                    <div id="pre" class="contnet">
+                    <div id="pre" class="contnet" style="top:150px;left:75px;">
                         <p class="title">体育赛事</p>
                         <p class="summer">英超、西甲、德甲、中超精彩赛事</p>
                         <p class="summer">无限火力 玩法多样</p>
                     </div>
-                </li> -->
-                <!-- <li class="childBox">
-                    <div id="pre" class="contnet">
+                </li>
+                <li class="childBox">
+                    <div id="pre" class="contnet" style="top:150px;left:75px;">
                         <p class="title">电子游艺</p>
                         <p class="summer">最专业的走势两面盘系统分析</p>
                         <p class="summer">最好的娱乐体验</p>
@@ -111,7 +106,7 @@
                     <div id="id_bell" class="bell">
                         <img src="./images/dianziyouyi/small_bell.png" alt="">
                     </div>
-                </li> -->
+                </li>
                 <li class="childBox">
                     <div class="buyu_bg">
                         <img src="./images/buyu/buyu_zh.png" alt="">
@@ -125,10 +120,125 @@
                     <div class="yxb2">
                         <img src="./images/buyu/yxb2.png" alt="">
                     </div>
+                    <div class="delphis">
+                        <img src="./images/buyu/delphis.png" alt="">
+                    </div>
+                    <div class="yxb1">
+                        <img src="./images/buyu/yxb1.png" alt="">
+                    </div>
+                    <div class="shark">
+                        <img src="./images/buyu/shark.png" alt="">
+                    </div>
+                    <div class="shell">
+                        <img src="./images/buyu/shell.png" alt="">
+                    </div>
                 </li>
-                <li class="childBox"></li>
-                <li class="childBox"></li>
-                <li class="childBox"></li>
+                <li class="childBox">
+                    <div class="big_shot">
+                        <img src="./images/caipiao/big_shot.png" alt="">
+                    </div>
+                    <div class="zb1">
+                        <img src="./images/caipiao/ZB_1.png" alt="">
+                    </div>
+                    <div class="zb2">
+                        <img src="./images/caipiao/ZB_2.png" alt="">
+                    </div>
+                    <div class="zb3">
+                        <img src="./images/caipiao/ZB_3.png" alt="">
+                    </div>
+                    <div class="zb4">
+                        <img src="./images/caipiao/ZB_4.png" alt="">
+                    </div>
+                    <div class="zb5">
+                        <img src="./images/caipiao/ZB_5.png" alt="">
+                    </div>
+                    <div class="zb6">
+                        <img src="./images/caipiao/ZB_6.png" alt="">
+                    </div>
+                    <div class="zb7">
+                        <img src="./images/caipiao/ZB_7.png" alt="">
+                    </div>
+                    <div class="zb8">
+                        <img src="./images/caipiao/ZB_8.png" alt="">
+                    </div>
+                    <div class="zb9">
+                        <img src="./images/caipiao/ZB_9.png" alt="">
+                    </div>
+                    <div class="zb10">
+                        <img src="./images/caipiao/ZB_10.png" alt="">
+                    </div>
+                    <div class="jb1">
+                        <img src="./images/caipiao/JB_1.png" alt="">
+                    </div>
+                    <div class="jb2">
+                        <img src="./images/caipiao/JB_2.png" alt="">
+                    </div>
+                    <div class="jb3">
+                        <img src="./images/caipiao/JB_3.png" alt="">
+                    </div>
+                    <div class="jb4">
+                        <img src="./images/caipiao/JB_4.png" alt="">
+                    </div>
+                    <div class="jb5">
+                        <img src="./images/caipiao/JB_4.png" alt="">
+                    </div>
+                    <div class="jb6">
+                        <img src="./images/caipiao/JB_6.png" alt="">
+                    </div>
+                    <div class="jb7">
+                        <img src="./images/caipiao/JB_6.png" alt="">
+                    </div>
+                    <div class="jb8">
+                        <img src="./images/caipiao/JB_8.png" alt="">
+                    </div>
+                </li>
+                <li class="childBox">
+                    <div class="zb_img">
+                        <img src="./images/qipai/zb_img.png" alt="">
+                    </div>
+                    <div class="big_img">
+                        <img src="./images/qipai/big_img.png" alt="">
+                    </div>
+                    <div class="meinv">
+                        <img src="./images/qipai/meinv.png" alt="">
+                    </div>
+                    <div class="qipai_dice">
+                        <img src="./images/qipai/dice.png" alt="">
+                    </div>
+                    <div id="pre" class="contnet qipai" style="top:150px;left:75px;">
+                        <p class="title">棋牌扑克</p>
+                        <p class="summer">高额赔率 玩家对垒</p>
+                        <p class="summer">万人在线 火爆PK</p>
+                    </div>
+                </li>
+                <li class="childBox">
+                    <div class="fapaiyuan">
+                        <img src="./images/fapaiyuan/fpy.png" alt="">
+                    </div>
+                    <div class="puk">
+                        <img src="./images/fapaiyuan/puk.png" alt="">
+                    </div>
+                    <div class="puk1">
+                        <img src="./images/fapaiyuan/puk1.png" alt="">
+                    </div>
+                    <div class="puk2">
+                        <img src="./images/fapaiyuan/puk2.png" alt="">
+                    </div>
+                    <div class="ship1">
+                        <img src="./images/fapaiyuan/ship1.png" alt="">
+                    </div>
+                    <div class="ship2">
+                        <img src="./images/fapaiyuan/ship2.png" alt="">
+                    </div>
+                    <div class="ship3">
+                        <img src="./images/fapaiyuan/ship3.png" alt="">
+                    </div>
+                    <div id="pre" class="contnet fapai" style="top:150px;left:75px;">
+                        <p class="title">真人荷官</p>
+                        <p class="summer">AG美女荷官在线发牌</p>
+                        <p class="summer">给您视觉上的绝佳体验</p>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -147,8 +257,9 @@
     // 设置轮播图盒子的宽度
     banner.style.width = 7 * bomWidth + "px";
     // 第一个Li的文字上移
-    (function(){
-        var spp = parseInt(getComputedStyle(pre,null).top);
+    function up(){
+        var pre = document.getElementById("pre");
+        var spp = parseInt(pre.style.top);
         var timer = setInterval(function(){
             var speed = 1;
             if(pre.offsetTop <= 100){
@@ -157,66 +268,62 @@
                 pre.style.top = (pre.offsetTop -speed) + 'px';
             }
         },20)
-    })();
+    };
+    up();
     
     // 奖杯掉下的动作
-    // (function(){
-    //     var timer=null;
-	//     var iSpeedX=0;
-	//     var iSpeedY=0;
-       
-    //     clearInterval(timer);
-    //     timer=setInterval(function (){
-    //         var oDiv=document.getElementById('div1');
-    //         iSpeedY+=3;
-    //         var l=oDiv.offsetLeft+iSpeedX;
-    //         var t=oDiv.offsetTop+iSpeedY;
-            
-    //         if(t>=document.documentElement.clientHeight-oDiv.offsetHeight)
-    //         {
-    //             iSpeedY*=-0.8;
-    //             iSpeedX*=0.8;
-    //             t=document.documentElement.clientHeight-oDiv.offsetHeight;
-    //         }
-    //         else if(t<=0)
-    //         {
-    //             iSpeedY*=-1;
-    //             iSpeedX*=0.8;
-    //             t=0;
-    //         }
-            
-    //         if(l>=document.documentElement.clientWidth-oDiv.offsetWidth)
-    //         {
-    //             iSpeedX*=-0.8;
-    //             l=document.documentElement.clientWidth-oDiv.offsetWidth;
-    //         }
-    //         else if(l<=0)
-    //         {
-    //             iSpeedX*=-0.8;
-    //             l=0;
-    //         }
-            
-    //         if(Math.abs(iSpeedX)<1)
-    //         {
-    //             iSpeedX=0;
-    //         }
-            
-    //         if(Math.abs(iSpeedY)<1)
-    //         {
-    //             iSpeedY=0;
-    //         }
-            
-    //         if(iSpeedX==0 && iSpeedY==0 && t==document.documentElement.clientHeight-oDiv.offsetHeight)
-    //         {
-    //             clearInterval(timer);
-    //         }
-    //         else
-    //         {
-    //             oDiv.style.left=l+'px';
-    //             oDiv.style.top=t+'px';
-    //         }
-    //     }, 30);
-    // })();
+    function floot(){
+        var timer=null;
+	    var iSpeedX=0;
+	    var iSpeedY=0;
+        clearInterval(timer);
+        timer=setInterval(function (){
+            var oDiv=document.getElementById('div1');
+            iSpeedY+=3;
+            var l=oDiv.offsetLeft+iSpeedX;
+            var t=oDiv.offsetTop+iSpeedY;
+            if(t>=document.documentElement.clientHeight-oDiv.offsetHeight)
+            {
+                iSpeedY*=-0.8;
+                iSpeedX*=0.8;
+                t=document.documentElement.clientHeight-oDiv.offsetHeight;
+            }
+            else if(t<=0)
+            {
+                iSpeedY*=-1;
+                iSpeedX*=0.8;
+                t=0;
+            }
+            if(l>=document.documentElement.clientWidth-oDiv.offsetWidth)
+            {
+                iSpeedX*=-0.8;
+                l=document.documentElement.clientWidth-oDiv.offsetWidth;
+            }
+            else if(l<=0)
+            {
+                iSpeedX*=-0.8;
+                l=0;
+            }
+            if(Math.abs(iSpeedX)<1)
+            {
+                iSpeedX=0;
+            }           
+            if(Math.abs(iSpeedY)<1)
+            {
+                iSpeedY=0;
+            }
+            if(iSpeedX==0 && iSpeedY==0 && t==document.documentElement.clientHeight-oDiv.offsetHeight)
+            {
+                clearInterval(timer);
+            }
+            else
+            {
+                oDiv.style.left=l+'px';
+                oDiv.style.top=t+'px';
+            }
+        }, 30);
+    };
+    floot();
 
     // 铃铛抖动效果
     setInterval(function(){
